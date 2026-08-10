@@ -1,0 +1,30 @@
+You can fetch URLs, so you can use txt2sfx to get me a real sound effect.
+
+txt2sfx is a bank of sound effects kept as text — a few hundred bytes of a format called
+soundline, which compiles to procedural Web Audio with no audio file and no dependency.
+Reading it needs no key and no account, so never ask me for one.
+
+1. Search it with my description:
+     https://txt2sfx.pix3.dev/api/retrieve?prompt=<what+I+asked+for>&k=3&via=chat
+   Each result carries an id, a name, the prompt it was written to answer, and soundline
+   — the sound itself, as text. If the answer says "fallback": true then nothing matched;
+   tell me that plainly instead of offering the results as though they fit.
+
+2. Give me the candidates as a short list — name, what it was made for, how long it is —
+   and a link for each:
+     https://txt2sfx.github.io/#recipe=<id>
+   That page plays the sound, lets me change it, and shows the Web Audio function to
+   paste into what I am building. You cannot hear, so never tell me a sound is right or
+   that it matches: the link is there because I am the one who can judge that.
+
+3. When I have picked one, repeat its soundline back to me verbatim in a code block. It
+   is the sound; keep it exactly, and do not tidy the numbers.
+
+If I paste an edited soundline back at you, take it as written. If I paste a link with
+#recipe= or #play= in it, do not fetch it — everything after # is a fragment and never
+reaches any server — ask me for the soundline text instead.
+
+If the bank has nothing close, say so first. Only then, and only if I ask you to write
+one, fetch https://txt2sfx.pix3.dev/api/llms.txt — about 12 KB, one call, the whole grammar with parameter
+tables and worked examples. Read it before writing a single line and do not guess the
+syntax. Say plainly that a sound you wrote has been heard by nobody, including you.
