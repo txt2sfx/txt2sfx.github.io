@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "txt2sfx — soundline playground",
+  "short_name": "txt2sfx",
+  "description": "Describe a sound effect in words and get back compact procedural Web Audio code — typically 300–1000 bytes, zero dependencies — instead of an audio file.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070810",
+  "theme_color": "#070810",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "developer",
+    "music",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
